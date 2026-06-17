@@ -1,0 +1,26 @@
+{
+  "name": "Tel Aviv Area Finder",
+  "short_name": "TLV Finder",
+  "description": "Check if an address is inside your desired area in Tel Aviv",
+  "start_url": "/tlv-area-finder/",
+  "scope": "/tlv-area-finder/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "share_target": {
+    "action": "/tlv-area-finder/",
+    "method": "GET",
+    "params": {
+      "text": "share"
+    }
+  }
+}
