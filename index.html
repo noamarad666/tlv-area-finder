@@ -140,7 +140,7 @@ async function doSearch() {
   if (!q) return;
   setStatus('Searching…');
   try {
-    const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q + ', Tel Aviv, Israel')}&format=json&limit=5&countrycodes=il&viewbox=34.75,32.15,34.85,32.05&bounded=1`;
+    const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q + ', Tel Aviv')}&format=json&limit=5&countrycodes=il&viewbox=34.73,32.15,34.85,32.02&bounded=1`;
     const res = await fetch(url, { headers: { 'Accept-Language': 'en' } });
     const data = await res.json();
     if (!data.length) { setStatus('No results found. Try a different address.'); return; }
